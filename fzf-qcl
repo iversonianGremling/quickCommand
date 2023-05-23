@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+qc -x | sed 's/^[0-9] //' |  awk -F',' '{print NR, $s}' | fzf | awk '{$1=""; print substr($0,2)}' | xargs -I{} qc -e {} 
