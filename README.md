@@ -1,4 +1,5 @@
 Optional (recommended) dependencies:
+
 -dmenu + zsh or fzf
 
 Quick command is a series of small scripts (and an optional zsh widget) designed to improve efficiency when dealing with repetitive tasks, it can also work from the terminal via fzf, so basically
