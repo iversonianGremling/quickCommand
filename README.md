@@ -1,3 +1,5 @@
+![Logo qc](https://github.com/Vdevelasco/quickCommand/assets/24989959/6e82e896-94b8-4114-95a5-4ec2f5af2194)
+
 <p align="center"> QUICK COMMAND </p>
 
 <p align="center">
