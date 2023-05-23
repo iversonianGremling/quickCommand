@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+# Determine the shell history file path
+shell=$(basename "$SHELL")
+
+case "$shell" in
+  bash)
+    history_file="$HOME/.bash_history"
+    ;;
+  zsh)
+    history_file="$HOME/.zsh_history"
+    ;;
+  fish)
+    history_file="$HOME/.config/fish/fish_history"
+    ;;
+  *)
+    echo "Unsupported shell: $shell"
+    exit 1
+    ;;
+esac
+
+# Get the last 50 commands from the history file
+commands=$(tail -n 50 "$history_file")
+
+# Select a command using fzf
+selected_command=$(echo "$commands" | sed "s/^.*;//" | awk -F',' '{print NR, $s}' | fzf | awk '{$1=""; print substr($0,2)}' | xargs -I{} qc -a {})
+
+# Output the selected command as text
+if [[ -n "$selected_command" ]]; then
+  echo "$selected_command"
+fi
+

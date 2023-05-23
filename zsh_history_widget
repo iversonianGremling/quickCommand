@@ -1,0 +1,21 @@
+
+qc-a-history-widget() {
+  # Get a list of recent commands from history
+  local cmds="$(fc -l -20 | awk '{$1=""; print substr($0,2)}' | uniq)"
+
+  # Use dmenu to select a command from the list
+  local selected=$(echo -e "${cmds[@]}" | tac | dmenu -l 5 -p "Select command:") 
+
+  # If a command was selected, prepend "qc -a" and execute the command
+  if [ -n "$selected" ]; then
+    command=$(printf "\"%b\"" $selected)
+    BUFFER="qc -a $command"
+    zle accept-line
+  fi
+}
+
+# Bind the widget to a key sequence (e.g. Alt+H)
+zle -N qc-a-history-widget
+bindkey '^H' qc-a-history-widget
+
+

@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+eval $(qc -l | dmenu_instant -l 5 -p "These are the commands: " -fn "monospace:size=9"| sed 's/^[0-9] //' ) 

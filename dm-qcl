@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+qc -x | dmenu_instant -l 5 -p "These are the files: " -fn "monospace:size=9" | xargs -I{} qc -e {} 
