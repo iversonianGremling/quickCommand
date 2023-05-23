@@ -1,7 +1,7 @@
 <p align="center"> QUICK COMMAND </p>
 
 <p align="center">
-  <img src="  <img src="https://github.com/Vdevelasco/quickCommand/assets/24989959/6e82e896-94b8-4114-95a5-4ec2f5af2194" />
+  <img src="  <img src=![Logo qc](https://github.com/Vdevelasco/quickCommand/assets/24989959/50c05d13-a486-4d45-9977-104044fa6476) />
 " />
   
 </p>
