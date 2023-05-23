@@ -1,4 +1,7 @@
-                          ![Logo qc](https://github.com/Vdevelasco/quickCommand/assets/24989959/7e16ae71-1bbb-4b14-907d-cebc6759eab6)
+<p align="center">
+  <img src="https://github.com/Vdevelasco/quickCommand/assets/24989959/7e16ae71-1bbb-4b14-907d-cebc6759eab6" />
+  <p> QUICK COMMAND </p>
+</p>
 
 
 Optional (recommended) dependencies:
