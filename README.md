@@ -1,3 +1,6 @@
+![Logo qc](https://github.com/Vdevelasco/quickCommand/assets/24989959/7e16ae71-1bbb-4b14-907d-cebc6759eab6)
+
+
 Optional (recommended) dependencies:
 
 - dmenu + zsh or fzf
