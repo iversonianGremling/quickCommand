@@ -61,3 +61,5 @@ TODO:
   -Provide better documentation
      
   -Add a video showing its usage for better clarity
+
+  -Load commands whenever used in an specific folder (some kind of session saving) 
